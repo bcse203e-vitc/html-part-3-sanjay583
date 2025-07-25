@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Travel Booking</title>
+</head>
+<body>
+<h1>Travel Booking Form</h1>
+<form>
+<label>Full Name:</label><br><input type="text" name="fullname"><br><br>
+<label>Contact Information:</label><br><input type="text" name="contact"><br><br>
+<label>Destination:</label><br>
+<select name="destination">
+<option>Paris</option>
+<option>New York</option>
+<option>Tokyo</option>
+<option>Dubai</option>
+</select><br><br>
+<label>Travel Dates:</label><br><input type="date" name="date"><br><br>
+<label>Number of Travelers:</label><br><input type="number" name="travelers" id="travelers"><br><br>
+<label>Travel Class:</label><br>
+<input type="radio" name="class" value="Economy"> Economy
+<input type="radio" name="class" value="Business"> Business
+<input type="radio" name="class" value="First"> First Class<br><br>
+<input type="checkbox" name="insurance"> Add Travel Insurance<br><br>
+<!-- Total cost field (not functional in plain HTML) -->
+<label>Total Cost (calculated manually):</label><br><input type="text" readonly value="To be calculated"><br><br>
+<button type="submit">Book Now</button>
+</form>
+</body>
+</html>

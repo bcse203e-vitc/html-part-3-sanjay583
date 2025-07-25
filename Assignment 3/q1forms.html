@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Login and Reset</title>
+</head>
+<body>
+<h1>User Login</h1>
+<form action="/login" method="post">
+<label for="username">Username:</label><br>
+<input type="text" id="username" name="username" required><br><br>
+<label for="password">Password:</label><br>
+<input type="password" id="password" name="password" required><br><br>
+<button type="submit">Login</button><br><br>
+<a href="#reset">Forgot Password?</a>
+</form>
+<hr>
+<h2 id="reset">Reset Password</h2>
+<form action="/reset-password" method="post">
+<label for="email">Email:</label><br>
+<input type="email" id="email" name="email" required><br><br>
+<label for="newpass">New Password:</label><br>
+<input type="password" id="newpass" name="newpass" required><br><br>
+<label for="confirmpass">Confirm Password:</label><br>
+<input type="password" id="confirmpass" name="confirmpass" required><br><br>
+<button type="submit">Reset Password</button>
+</form>
+</body>
+</html>
